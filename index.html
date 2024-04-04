@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caranqui</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            overflow-y: hidden; /* Ocultar la barra de desplazamiento horizontal */
+        }
+
+        /* Modificar la fuente y el tamaño de letra del h1 */
+        h1 {
+            font-family: "Crimson Text", serif; /* Cambiar la fuente */
+            font-size: 16px; /* Cambiar el tamaño de letra */
+        }
+
+        /* Modificar la fuente y el tamaño de letra del h2 */
+        h2 {
+            font-family:'Montserrat', sans-serif; /* Cambiar la fuente */
+            font-size: 40px; /* Cambiar el tamaño de letra */
+            color: rgb(47, 26, 59); /* Cambiar el color del texto */}
+
+        .container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-images img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            transition: opacity 0.5s ease;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1em;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(255, 255, 255);
+            color: #333; /* Color del texto */
+            width: 450px; /* Ancho del recuadro */
+            height: 220px; /* Alto del recuadro */
+            max-width: calc(100% - 1em); /* Tamaño máximo igual al ancho de la ventana menos los 2em de padding */
+            max-height: calc(200% - 2em); /* Tamaño máximo igual al alto de la ventana menos los 2em de padding */
+            overflow: hidden; /* Ocultar el desbordamiento */
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            transition: filter 0.3s; /* Agregar transición para suavizar el cambio de color */
+        }
+
+        .social-links img:hover {
+            filter: brightness(1.5); /* Cambiar el brillo para resaltar el icono */
+        }
+        .social-links img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s; /* Agregar transición para suavizar el cambio de opacidad */
+}
+
+.social-links img:hover {
+    opacity: 0.7; /* Cambiar la opacidad al 70% cuando el ratón pasa sobre ellos */
+}
+
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-family:'Montserrat', sans-serif;
+            color: rgb(47, 26, 59); /* Color del texto */
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(95, 72, 109); /* Color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-images">
+            <img src="https://pbs.twimg.com/media/GKTbhrmXIAAc1sK?format=jpg&name=4096x4096" alt="Imagen 1" width="4092" height="1990">
+        </div>
+        <div class="overlay">
+            <div class="content">
+                <h1 style="color: #eca36f;">ARTIST, ILLUSTRATOR & CHARACTER DESIGNER</h1>
+                <h2>MICHAEL CARANQUI</h2>
+                <nav>
+                    <ul>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/michael_caranqui/" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/instagram-256.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/MichaelCaranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/M.Caranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/facebook-256.png" alt="Facebook"></a></li>
+        </ul>
+    </div>
+</body>
+</html>
+

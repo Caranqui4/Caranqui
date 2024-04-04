@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Caranqui</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .name {
+            text-decoration: none;
+            font-family: 'Crimson Text', sans-serif;
+            color: #eca36f;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-family:'Montserrat', serif;
+            color: rgb(47, 26, 59);
+            font-size: 18px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            font-family:'Montserrat', sans-serif; /* Fuente predeterminada para el menú */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color:  rgb(47, 26, 59);
+            transition: opacity 0.3s;
+        }
+
+        .menu a:hover {
+            opacity: 0.7;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img {
+            width: 501.804px; /* Ancho deseado */
+            height: 501.804px; /* Alto deseado */
+            position: relative;
+            transition: opacity 0.3s; /* Mantenemos la transición de opacidad si quieres mantenerla */
+        }
+
+        .gallery img:hover {
+            opacity: 0.7;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links li {
+            display: inline-block;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            transition: opacity 0.3s; /* Agregar transición para suavizar el cambio de opacidad */
+        }
+
+        .social-links img:hover {
+            opacity: 0.7; /* Cambiar la opacidad al 70% cuando el ratón pasa sobre ellos */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html" class="name">Caranqui</a>
+            <span class="title">Work</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Welcome</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="gallery">
+        <!-- Aquí van las imágenes de tu galería -->
+        <div class="gallery">
+            <img src="https://pbs.twimg.com/media/GBUUyADXYAAPBYq?format=jpg&name=4096x4096" alt="Image 1" onclick="openModal('https://via.placeholder.com/800')" />
+            <img src="https://pbs.twimg.com/media/GDSANxxXcAAtJbC?format=jpg&name=4096x4096" alt="Image 2" onclick="openModal('https://via.placeholder.com/800')" />
+            <img src="https://pbs.twimg.com/media/GDr8-NRXgAAdixE?format=jpg&name=4096x4096" alt="Image 3" onclick="openModal('https://via.placeholder.com/800')" />
+            <img src="https://pbs.twimg.com/media/GKWWJxpWQAEBUmN?format=jpg&name=4096x4096" alt="Image 3" onclick="openModal('https://via.placeholder.com/800')" />
+            <!-- Agrega más imágenes aquí -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>All images © Michael Caranqui unless otherwise stated</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/michael_caranqui/" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/instagram-256.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/MichaelCaranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/M.Caranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/facebook-256.png" alt="Facebook"></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
