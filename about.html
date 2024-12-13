@@ -5,53 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT - Caranqui</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <title>STATEMENT - Caranqui</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Crimson+Text&display=swap" rel="stylesheet">
     <style>
+        /* Estilo General */
         body {
             font-family: 'Montserrat', sans-serif;
-            margin: 0px;
+            margin: 0;
             padding: 0;
+            background-color: rgba(24, 24, 24, 0.952);
+            color: #ffffff;
         }
 
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            background-color: rgba(24, 24, 24, 0.952);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .name {
             text-decoration: none;
-            font-family: 'Crimson Text', sans-serif;
-            color: #eca36f;
+            font-family: 'Crimson Text', serif;
             font-size: 24px;
             font-weight: bold;
+            color: #ffffff;
         }
 
         .title {
-            font-family:'Montserrat', serif;
-            color: rgb(47, 26, 59);
+            font-family: 'Montserrat', sans-serif;
             font-size: 18px;
+            color: #ffffff;
         }
 
         .menu {
-            text-decoration: none;
             display: flex;
             gap: 20px;
-            font-family: 'Montserrat', sans-serif;
         }
 
         .menu a {
             text-decoration: none;
-            color: #000000;
-            transition: opacity 0.3s;
+            color: #ffffff;
+            transition: opacity 0.3s ease;
         }
 
         .menu a:hover {
@@ -61,52 +58,57 @@
         .bio {
             text-align: justify;
             padding: 20px;
-            margin: 0 auto; /* Centra el contenido */
-            max-width: 800px; /* Limita el ancho del contenido */
+            margin: 0 auto;
+            max-width: 800px;
         }
 
         .bio img {
-            border-radius: 50%; /* Hace que la imagen sea circular */
-            width: 300px; /* Tamaño de la imagen */
-            height: 300px;
-            display: block; /* Para centrar la imagen */
-            margin: 0 auto 20px; /* Centra la imagen y añade espacio inferior */
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto 20px;
         }
 
         .bio p {
-            font-family:'Crimson Text' , sans-serif;
-            color: rgb(9, 6, 10);
+            font-family: 'Crimson Text', serif;
             font-size: 20px;
             line-height: 1.6;
+            color: #cccccc;
         }
-        .email p {
-        text-align: center;/* Centra el texto */
-        color: #727272; /* Cambia el color del texto (azul) */
-        font-size: 18px;/* Cambia el tamaño del texto */
-    }
 
-        .social-links {
+        .email {
             text-align: center;
             margin-top: 20px;
+            font-size: 18px;
+            color: #eca36f;
         }
 
-        .social-links a {
-            display: inline-block;
-            margin-right: 10px;
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(24, 24, 24, 0.952);
+            color: #cccccc;
+            border-top: 1px solid #444;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
         }
 
         .social-links img {
             width: 30px;
             height: 30px;
-        }
-        .social-links img {
-            width: 30px;
-            height: 30px;
-            transition: opacity 0.3s; /* Agregar transición para suavizar el cambio de opacidad */
+            transition: opacity 0.3s ease;
         }
 
         .social-links img:hover {
-            opacity: 0.7; /* Cambiar la opacidad al 70% cuando el ratón pasa sobre ellos */
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -115,29 +117,36 @@
     <header>
         <div>
             <a href="index.html" class="name">Caranqui</a>
-            <span class="title">ABOUT</span>
+            <span class="title">STATEMENT</span>
         </div>
         <nav class="menu">
             <a href="index.html">Welcome</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About</a>
+            <a href="about.html">Statement</a>
         </nav>
     </header>
 
     <div class="bio">
         <img src="https://pbs.twimg.com/media/GKlV8BiXkAAv0tp?format=jpg&name=large" alt="Foto de perfil">
-        <p>Hello! I'm Michael Caranqui, a freelance artist with a degree in Plastic Arts from the Central University of Ecuador. My artistic work focuses on exploring the boundaries between traditional and digital techniques in art. My career as a freelance artist has allowed me to experiment with a wide variety of mediums and styles, from oil painting and traditional drawing to digital illustration. I'm passionate about the interaction between traditional and modern techniques, and how these techniques can coexist and complement each other in a work of art.</p>
+        <p>Soy un artista peculiar, mis herramientas artísticas incluyen elementos poco convencionales como videocámaras, cámaras analógicas, escáneres, captura de movimiento y mundos virtuales. A través de estas herramientas, creo obras que desdibujan las fronteras entre lo metafísico y lo tangible.
+            
+            Mi interés por explorar estas temáticas surgió de una fascinación personal con cómo la tecnología ha redefinido no solo nuestras herramientas, sino también nuestras relaciones, identidades y creencias. Este enfoque me llevó a cuestionar cómo las fronteras entre lo digital y lo físico se han vuelto cada vez más borrosas, afectando nuestra percepción del arte, la espiritualidad y la vida cotidiana.
+            El arte siempre ha estado ligado al avance tecnológico, pero creo firmemente que no solo acompaña este progreso: el arte es en sí mismo tecnología, un motor de innovación y transformación que conecta las emociones humanas con el potencial infinito de lo digital.
+            A través de mi trabajo, busco invitar al espectador a reflexionar sobre cómo la tecnología no solo transforma nuestra manera de vivir, sino también nuestra humanidad. ¿Dónde termina lo humano y comienza lo digital? ¿Cómo se entrelazan estas realidades? 
+            </p>
         <div class="email">
             <p>email: israelmerizalde4@gmail.com</p>
         </div>
-        
     </div>
 
-    <div class="social-links">
-        <a href="https://www.instagram.com/michael_caranqui/" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/instagram-256.png" alt="Instagram"></a>
-        <a href="https://twitter.com/MichaelCaranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="Twitter"></a>
-        <a href="https://www.facebook.com/M.Caranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/facebook-256.png" alt="Facebook"></a>
-    </div>
+    <footer class="footer">
+        <p>© 2024 Michael Caranqui. Todos los derechos reservados.</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/michael_caranqui/" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/instagram-256.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/MichaelCaranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/M.Caranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/facebook-256.png" alt="Facebook"></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
