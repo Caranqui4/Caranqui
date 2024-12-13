@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,47 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO - Caranqui</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        .name {
-            text-decoration: none;
-            font-family: 'Crimson Text', sans-serif;
-            color: #eca36f;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .title {
-            font-family:'Montserrat', serif;
-            color: rgb(47, 26, 59);
-            font-size: 18px;
-        }
-
-        .menu {
-            display: flex;
-            gap: 20px;
-            font-family:'Montserrat', sans-serif; /* Fuente predeterminada para el menú */
-        }
-
-        .menu a {
-            text-decoration: none;
-            color:  rgb(47, 26, 59);
-            transition: opacity 0.3s;
-        }
-
-        .menu a:hover {
-            opacity: 0.7;
+            background-color: rgba(24, 24, 24, 0.952);
+            color: #ffffff;
+            overflow: auto; /* Permite desplazamiento si el contenido excede la pantalla */
         }
 
         header {
@@ -54,39 +24,69 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            background-color: #fff;
+            background-color: rgba(24, 24, 24, 0.952);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .gallery {
+
+        .name {
+            text-decoration: none;
+            font-family: 'Crimson Text', serif;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 18px;
+        }
+
+        .menu {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-             gap: 40px; /* Espacio entre imágenes */
-            padding: 20px;
+            gap: 20px;
         }
 
-
-        .gallery img {
-            width: 501.804px; /* Ancho deseado */
-            height: 501.804px; /* Alto deseado */
-            position: relative;
-            transition: opacity 0.3s; /* Mantenemos la transición de opacidad si quieres mantenerla */
+        .menu a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: opacity 0.3s;
         }
 
-        .gallery img:hover {
+        .menu a:hover {
             opacity: 0.7;
         }
-        .footer p {
-    color: #727272; /* Cambiar el color del texto a rojo (#FF0000) */
-}
 
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px 20px;
+            margin-top: 60px; /* Para evitar que los videos se solapen con el encabezado */
+        }
 
-        .footer {
+        .gallery video {
+            width: 800px;
+            height: 450px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .gallery video:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        footer {
             text-align: center;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-top: 1px solid #ddd;
+            background-color: rgba(24, 24, 24, 0.952);
+            color: #ccc;
+            border-top: 1px solid #333;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
         .social-links {
@@ -94,26 +94,18 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .social-links li {
-            display: inline-block;
+            gap: 15px;
+            margin: 10px 0;
         }
 
         .social-links img {
             width: 30px;
             height: 30px;
-        }
-        .social-links img {
-            width: 30px;
-            height: 30px;
-            transition: opacity 0.3s; /* Agregar transición para suavizar el cambio de opacidad */
+            transition: opacity 0.3s;
         }
 
         .social-links img:hover {
-            opacity: 0.7; /* Cambiar la opacidad al 70% cuando el ratón pasa sobre ellos */
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -127,32 +119,55 @@
         <nav class="menu">
             <a href="index.html">Welcome</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About</a>
+            <a href="about.html">Statement</a>
         </nav>
     </header>
 
     <div class="gallery">
-        <!-- Aquí van las imágenes de tu galería -->
-        <div class="gallery">
-            <img src="https://pbs.twimg.com/media/GLAxCT3XcAA4NZ-?format=jpg&name=4096x4096" alt="Image 1" onclick="openModal('https://via.placeholder.com/800')" />
-            <img src="https://pbs.twimg.com/media/GK23DmqWAAALHl8?format=jpg&name=large" alt="Image 1" onclick="openModal('https://via.placeholder.com/800')" />
-            <img src="https://pbs.twimg.com/media/GKCzUB1WkAAe2vr?format=jpg&name=4096x4096" alt="Image 1" onclick="openModal('https://via.placeholder.com/800')" />
-            <img src="https://pbs.twimg.com/media/GKWWJxpWQAEBUmN?format=jpg&name=4096x4096" alt="Image 2" onclick="openModal('https://via.placeholder.com/800')" />
-            <img src="https://pbs.twimg.com/media/GDr8-NRXgAAdixE?format=jpg&name=4096x4096" alt="Image 3" onclick="openModal('https://via.placeholder.com/800')" />
-            <img src="https://pbs.twimg.com/media/GDSANxxXcAAtJbC?format=jpg&name=4096x4096" alt="Image 4" onclick="openModal('https://via.placeholder.com/800')" />
-            <img src="https://pbs.twimg.com/media/GBUUyADXYAAPBYq?format=jpg&name=4096x4096" alt="Image 5" onclick="openModal('https://via.placeholder.com/800')" />
-                        <!-- Agrega más imágenes aquí -->
+        <!-- Video 1 -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/5gqyf8DOj-M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="text-align: center; color: #fff; margin-top: 10px;">Amor (2023) Intervencion Audioreactiva</p>
+        </div>
+    
+        <!-- Video 2 -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/6o7bNEkKXXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="text-align: center; color: #fff; margin-top: 10px;">Wasi (2023) Videoarte 3D</p>
+        </div>
+    
+        <!-- Video 3 -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/y_BqSAyvnd4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="text-align: center; color: #fff; margin-top: 10px;">D10ss (2024) Videoarte</p>
+        </div>
+    
+        <!-- Video 4 -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/lHVxoLi3ats" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="text-align: center; color: #fff; margin-top: 10px;">Naturaleza Moderna (2023) Espacio de realidad virtual </p>
+
+            <!-- Video 5 -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/6tAb4qpc-V4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="text-align: center; color: #fff; margin-top: 10px;">Escuchame, estoy aquí (2022) Videoarte</p>
         </div>
     </div>
 
-    <div class="footer">
-        <p>All images © Michael Caranqui unless otherwise stated</p>
+    <footer>
+        <p>© 2024 Michael Caranqui. Todos los derechos reservados.</p>
         <ul class="social-links">
-            <li><a href="https://www.instagram.com/michael_caranqui/" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/instagram-256.png" alt="Instagram"></a></li>
-            <li><a href="https://twitter.com/MichaelCaranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="Twitter"></a></li>
-            <li><a href="https://www.facebook.com/M.Caranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/facebook-256.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/michael_caranqui/" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/instagram-256.png" alt="Instagram">
+            </a></li>
+            <li><a href="https://twitter.com/MichaelCaranqui" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="Twitter">
+            </a></li>
+            <li><a href="https://www.facebook.com/M.Caranqui" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/facebook-256.png" alt="Facebook">
+            </a></li>
         </ul>
-    </div>
+    </footer>
 </body>
-</html>
 
+</html>
