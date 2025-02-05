@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATEMENT - Caranqui</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Crimson+Text&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo General */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(24, 24, 24, 0.952);
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(24, 24, 24, 0.952);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .name {
+            text-decoration: none;
+            font-family: 'Crimson Text', serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu a:hover {
+            opacity: 0.7;
+        }
+
+        .bio {
+            text-align: justify;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .bio img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .bio p {
+            font-family: 'Crimson Text', serif;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        .email {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #eca36f;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(24, 24, 24, 0.952);
+            color: #cccccc;
+            border-top: 1px solid #444;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links img:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html" class="name">Caranqui</a>
+            <span class="title">STATEMENT</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Welcome</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">Statement</a>
+            <a href="bio.html">Bio</a>
+        </nav>
+    </header>
+
+    <div class="bio">
+        <img src="https://pbs.twimg.com/media/GKlV8BiXkAAv0tp?format=jpg&name=large" alt="Foto de perfil">
+        <p>Michael Israel Caranqui Merizalde
+
+            Nacido el 4 de abril de 2003 en Latacunga, Ecuador, se trasladó a Quito, donde en 2021 inició sus estudios en Artes Plásticas en la Universidad Central del Ecuador, con una especialización en nuevos medios. Su trabajo ha sido exhibido en la séptima edición de Arte desde la Academia – Banco Mundial, y ha participado en proyectos de mediación educativa, como Museo Sensorial en el Centro de Arte Contemporáneo, una iniciativa que permitió explorar el arte a través de los sentidos más allá de la vista.
+            
+            Además, colaboró en la realización del documental Mama Tola, desarrollado junto a la comunidad del barrio La Tola con el propósito de rescatar la memoria individual de sus habitantes. 
+            </p>
+        <div class="email">
+            <p>email: israelmerizalde4@gmail.com</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Michael Caranqui. Todos los derechos reservados.</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/michael_caranqui/" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/instagram-256.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/MichaelCaranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-256.png" alt="Twitter"></a></li>
+            <li><a href="https://www.facebook.com/M.Caranqui" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/ink-social-media/35/facebook-256.png" alt="Facebook"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+
